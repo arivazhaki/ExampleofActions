@@ -4,7 +4,7 @@ import SimpleButton from './components/simpleButton';
 
 const App = ({ state: { count, refreshID }}) =>
 	<div className="App">
-		<div>Count: { count }</div>
+		<div>Count: { count }</div>hello world
 		<div>{ SimpleButton() }</div>
 		<div>Refresh ID: { refreshID }</div>
 	</div>;
