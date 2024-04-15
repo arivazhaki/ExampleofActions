@@ -8,6 +8,7 @@ const seed = {
 	refreshID: rndString(refreshIDLength),
 	shape: 'square',
 	size: 'large',
+	color: 'indigo',
 };
 
 export default seed;

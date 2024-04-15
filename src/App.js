@@ -9,7 +9,9 @@ const App = ({ state: { count, refreshID }}) =>
 		<div>Count: { count }</div>hello world
 		<div>{ SimpleButton() }</div>
 		<div>Refresh ID: { refreshID }</div>
-		<Shape{ ...context }/>
+		<center>
+			<Shape{ ...context }/>
+		</center>
 	</div>;
 
 export default App;

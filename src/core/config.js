@@ -23,7 +23,14 @@ const config = {
 		small: { transform: 'scale(0.5)' },
 		large: { transform: 'scale(1)' },
 	},
+
 	sizes: ['small', 'medium', 'large'],
+	colorStyle: {
+		green: { backgroundColor: 'green' },
+		red: { backgroundColor: 'red' },
+		blue: { backgroundColor: 'blue' },
+	},
+	colors: ['green', 'red', 'blue'],
 };
 
 export default config;
