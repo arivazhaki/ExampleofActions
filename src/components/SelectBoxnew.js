@@ -2,13 +2,13 @@
 import React from 'react';
 import { peek } from '@laufire/utils/debug';
 
-const SelectBox = ({ data: { action, list }}) => {
-	peek(list);
+const SelectBoxnew = ({ actions, config: { sizes }}) => {
+	peek(sizes);
 	return (
 		<select
-			onChange={ (event) => action(event.target.value) }
+			onChange={ (event) => actions.setSize(event.target.value) }
 		>
-			{ list.map((newValue, index) =>
+			{ sizes.map((newValue, index) =>
 				<option
 					key={ index }
 					value={ newValue }
@@ -19,4 +19,4 @@ const SelectBox = ({ data: { action, list }}) => {
 	);
 };
 
-export default SelectBox;
+export default SelectBoxnew;

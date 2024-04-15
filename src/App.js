@@ -1,8 +1,8 @@
 import { React } from 'react';
 import './App.scss';
 import SimpleButton from './components/simpleButton';
-import Shape from './components/Shape';
 import context from './core/context';
+import Shape from './components/Shape';
 
 const App = ({ state: { count, refreshID }}) =>
 	<div className="App">

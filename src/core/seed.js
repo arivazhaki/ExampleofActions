@@ -7,6 +7,7 @@ const seed = {
 	count: config.countStart,
 	refreshID: rndString(refreshIDLength),
 	shape: 'square',
+	size: 'large',
 };
 
 export default seed;
