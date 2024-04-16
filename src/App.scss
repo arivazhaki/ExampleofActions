@@ -1,7 +1,14 @@
 .App {
 	text-align: center;
+	background-color: aqua;
 
 	button {
 		font-weight: bold;
 	}
 }
+.borderStyle {
+	border: 25px solid rgba(19, 10, 102, 0.555);
+	border-radius: 5px;
+	padding: 40px;
+  }
+  

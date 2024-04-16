@@ -6,12 +6,16 @@ import Shape from './components/Shape';
 
 const App = ({ state: { count, refreshID }}) =>
 	<div className="App">
-		<div>Count: { count }</div>hello world
-		<div>{ SimpleButton() }</div>
-		<div>Refresh ID: { refreshID }</div>
-		<center>
-			<Shape{ ...context }/>
-		</center>
+		<div className="borderStyle">
+			<h1>Welcome
+			</h1>
+			<div>{ SimpleButton() }</div>
+			<div>Count: { count }</div>
+			<div>Refresh ID: { refreshID }</div>
+			<center>
+				<Shape { ...context }/>
+			</center>
+		</div>
 	</div>;
 
 export default App;
