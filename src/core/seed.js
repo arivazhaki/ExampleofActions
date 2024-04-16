@@ -9,6 +9,9 @@ const seed = {
 	shape: 'square',
 	size: 'large',
 	color: 'indigo',
+	userName: '',
+	passWord: '',
+	email: '',
 };
 
 export default seed;
