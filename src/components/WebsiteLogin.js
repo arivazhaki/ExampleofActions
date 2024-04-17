@@ -1,7 +1,8 @@
-/* eslint-disable max-lines-per-function */
-/* eslint-disable no-undef */
 import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
+import UserName from './UserName';
+import PassWord from './PassWord';
+import LoginButton from './LoginButton';
 
 const boxStyle = {
 	width: '500px',
@@ -14,53 +15,17 @@ const boxStyle = {
 	backgroundColor: 'pink',
 };
 
-const ex = { margin: '30px' };
-
 const WebsiteLogin = (context) => {
-	const {
-		state: { userName, passWord, email },
-		actions: { setUserName, setPassword, setEmail },
-	} = context;
+	const { state: { userName }} = context;
 
 	peek(userName);
-	const clickChange = () => {
-		setUserName('');
-		setPassword('');
-		setEmail(`Welcome ${ userName }`);
-	};
-
 	return <div>
 		<div style={ boxStyle }>
 			<h1> Welcome To Laufire Account </h1>
-			<label htmlFor="mailId">Enter Your MailId:</label>
-			<input
-				type="text"
-				value={ userName }
-				onChange={ (event) =>
-					setUserName(event.target.value) }
-			/><br/>
-			<div><div style={ ex }>
-				<label htmlFor="enterpassword">Enter PassWord:</label>
-				<input
-					type="text"
-					value={ passWord }
-					onChange={ (event) =>
-						setPassword(event.target.value) }
-				/>
-			</div>
-			</div>
-			<input
-				type="submit"
-				value="
-				 Login  "
-				onClick={ clickChange }
-			/><br/>
-			<div>{ userName }</div>
-			<button
-				type="button"
-				onClick={ () => setPassword('blue') }
-			>Blue</button>
-			<p><div>{ email } @laufire.com </div></p>
+			<UserName { ...context }/>
+			<PassWord { ...context }/>
+			<LoginButton { ...context }/>
+			<div>Welcome { userName }</div>
 		</div>
 	</div>;
 };

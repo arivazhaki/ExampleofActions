@@ -14,8 +14,3 @@ const App = (context) =>
 	</div>;
 
 export default App;
-
-// <Shape { ...context }/>
-/* <div>{ SimpleButton() }</div>
-			<div>Count: { count }</div>
-			<div>Refresh ID: { refreshID }</div> */

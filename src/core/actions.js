@@ -4,7 +4,12 @@ const setSize = ({ data }) => ({ size: data });
 const setColor = ({ data }) => ({ color: data });
 const setUserName = ({ data }) => ({ userName: data });
 const setPassword = ({ data }) => ({ password: data });
-const setEmail = ({ data }) => ({ email: data });
+const setProfile = ({ state: { userName, password }}) => ({
+	profile: {
+		userName,
+		password,
+	},
+});
 
 const actions = {
 	increaseCount,
@@ -13,7 +18,7 @@ const actions = {
 	setColor,
 	setUserName,
 	setPassword,
-	setEmail,
+	setProfile,
 };
 
 export default actions;

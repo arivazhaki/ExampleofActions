@@ -12,6 +12,8 @@ const seed = {
 	userName: '',
 	passWord: '',
 	email: '',
+	profile: {},
+
 };
 
 export default seed;
