@@ -1,11 +1,11 @@
 import { React } from 'react';
 
 const LoginButton = (context) => {
-	const {	actions: { setProfile }} = context;
+	const {	actions: { setProfileName }} = context;
 
 	return (
 		<button
-			onClick={ () => setProfile() }
+			onClick={ () => setProfileName() }
 		>
 			Login
 		</button>

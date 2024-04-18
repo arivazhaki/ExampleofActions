@@ -2,7 +2,7 @@ import { React } from 'react';
 
 const PassWord = (context) => {
 	const {
-		state: { passWord },
+		state: { password },
 		actions: { setPassword },
 	} = context;
 
@@ -10,7 +10,7 @@ const PassWord = (context) => {
 		<label htmlFor="enterpassword">Enter PassWord:</label>
 		<input
 			type="text"
-			value={ passWord }
+			value={ password }
 			onChange={ (event) =>
 				setPassword(event.target.value) }
 		/>

@@ -10,9 +10,10 @@ const seed = {
 	size: 'large',
 	color: 'indigo',
 	userName: '',
-	passWord: '',
+	password: '',
 	email: '',
 	profile: {},
+	profileName: '',
 
 };
 

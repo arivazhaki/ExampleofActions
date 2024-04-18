@@ -10,6 +10,12 @@ const setProfile = ({ state: { userName, password }}) => ({
 		password,
 	},
 });
+const setProfileName = ({ state: { userName }}) =>
+	({
+		profileName: userName,
+		userName: '',
+		password: '',
+	});
 
 const actions = {
 	increaseCount,
@@ -19,6 +25,7 @@ const actions = {
 	setUserName,
 	setPassword,
 	setProfile,
+	setProfileName,
 };
 
 export default actions;

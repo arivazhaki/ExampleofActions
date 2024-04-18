@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
 import UserName from './UserName';
 import PassWord from './PassWord';
@@ -16,16 +15,15 @@ const boxStyle = {
 };
 
 const WebsiteLogin = (context) => {
-	const { state: { userName }} = context;
+	const { state: { profileName }} = context;
 
-	peek(userName);
 	return <div>
 		<div style={ boxStyle }>
 			<h1> Welcome To Laufire Account </h1>
 			<UserName { ...context }/>
 			<PassWord { ...context }/>
 			<LoginButton { ...context }/>
-			<div>Welcome { userName }</div>
+			<div>Welcome { profileName }</div>
 		</div>
 	</div>;
 };
