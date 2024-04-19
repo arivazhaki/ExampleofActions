@@ -7,7 +7,7 @@ const PassWord = (context) => {
 	} = context;
 
 	return <div>
-		<label htmlFor="enterpassword">Enter PassWord:</label>
+		<label>Enter PassWord:</label>
 		<input
 			type="text"
 			value={ password }

@@ -14,7 +14,7 @@ const seed = {
 	email: '',
 	profile: {},
 	profileName: '',
-
+	loginButton: 'login',
 };
 
 export default seed;

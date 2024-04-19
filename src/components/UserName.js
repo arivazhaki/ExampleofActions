@@ -7,7 +7,7 @@ const UserName = (context) => {
 	} = context;
 
 	return <div>
-		<label htmlFor="mailId">Enter Your UserName:</label>
+		<label>Enter Your UserName:</label>
 		<input
 			type="text"
 			value={ userName }
