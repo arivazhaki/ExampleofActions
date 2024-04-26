@@ -7,9 +7,11 @@ const PassWord = (context) => {
 	} = context;
 
 	return <div>
-		<label>Enter PassWord:</label>
+		<label htmlFor="pwd">Enter Password:</label>
 		<input
-			type="text"
+			type="password"
+			id="pwd"
+			name="pwd"
 			value={ password }
 			onChange={ (event) =>
 				setPassword(event.target.value) }

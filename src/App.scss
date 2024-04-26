@@ -1,14 +1,169 @@
 .App {
 	text-align: center;
+	width: '500px';
+	height: '500px';
 	background-color: aqua;
 
 	button {
 		font-weight: bold;
 	}
+
+	.borderStyle {
+		border: 25px solid rgba(19, 10, 102, 0.555);
+		border-radius: 5px;
+		padding: 40px;
+	}
+
+	.two {
+		background-color: royalblue;
+		position: relative;
+		right: 0%
+	}
+
+	.corner_box {
+		width: 200px;
+		height: 100px;
+		background-color: #310d6d;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		border: 1px solid #ccc;
+	}
+
+	.box2 {
+		width: '500px';
+		height: '500px';
+		border: '10px solid black';
+		border-radius: '10px';
+		padding: '20px';
+		margin: '25px';
+		margin-top: '100px';
+		background-color: 'pink';
+	}
 }
-.borderStyle {
-	border: 25px solid rgba(19, 10, 102, 0.555);
-	border-radius: 5px;
-	padding: 40px;
+.box {
+	width:600px;
+	height:600px;
+	text-align: center;
+	font-size: 225px;
+	transform: translate(50px,50px);
+	background-color: greenyellow;
+	color: blue;
+	border: '20px solid red';
+	position: relative;
+	}
+.innerBox {
+	width:100px;
+	height:100px;
+	background-color:red;
+	position:absolute;
+	}
+.leftBox{
+	width:100px;
+	height:100px;
+	background-color:red;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.rightBox {
+	width:100px;
+	height:100px;
+	background-color:red;
+	position:absolute;
+	top:0px;
+	right :0px;
+}
+.leftCornerBox {
+	width:100px;
+	height:100px;
+	background-color:red;
+	position:absolute;
+	top:0px;
+	left :0px;
+}
+.outerBox{
+	width: 100px;
+	height: 100px;
+	position:absolute;
+	background-color: green;
+	}
+.circle {
+	width: 100px;
+	height: 100px;
+	background-color: indigo;
+	position:sticky;
+	right: 20px;
+	border-radius: 50%;
+}
+.largeBox {
+	width:100px;
+	height:100px;
+	background-color:red;
+	position: fixed;
+	top:0px;
+	left :0px;
+}
+.exTransform {
+	width: 300px;
+	height: 300px;
+	background-color: skyblue;
+	position: relative;
+
+  }
+  .moved {
+	/* Equal to: translateX(10px) or translate(10px, 0) */
+	transform: translate(50px, 100px);
+	background-color: green;
+	position: absolute;
+  }
+
+  .parent {
+	border: 1px solid #09010a;
+	height: 250px;
+	position: relative;
+	background-color: greenyellow;
+	width: 250px;
   }
   
+  .child {
+	left: 50%;
+	position: absolute;
+	border:violet;
+	top: 50%;
+	width:200px;
+	height: 200px;
+	background-color: red;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }  
+  .child1{
+	left: 50%;
+	position: absolute;
+	top:50%;
+	width:100px;
+	height: 100px;
+	background-color:yellow;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }  
+  .newChild{
+	border: solid burlywood;
+	left: 60px;;
+	top: 70px;
+	position: absolute;
+	background-color: blue;
+	transform: translate(30px, 30px) rotate(30deg);
+	width: 70px;
+	height: 50px;
+  }
+  .one {
+	transform: translateX(400px) rotate(135deg);
+  }
+  .two {
+	transform: rotate(135deg) translateX(400px);
+  }
+  
+
+
+
